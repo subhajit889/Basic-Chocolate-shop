@@ -4,9 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chocolate shop</title>
+    <!-- Extranal Style sheet -->
     <link rel="stylesheet" href="./Asset/style.css">
 </head>
 <body>
+     <!-- navbar starts here -->
+     <nav class="navbar">
+        <div class="logo">
+            <img src="./Asset/Images/logo-design-49574.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <div class="cart-button">
+            <button id="cart-button">View Cart </button>
+        </div>
+        <div id="cart-counting">
+            Total Cart-items =
+            <span id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <!-- Product Cards container starts here -->
+    <div class="container">
+        <div class="product-card">
+            <img src="https://images.healthshots.com/healthshots/en/uploads/2022/07/07121542/dark-chocolate-1600x900.jpg"
+                alt="Product 1">
+            <h2>Kit Kat</h2>
+            <p>Chocolate is one of the most popular food types and  mousse, chocolate brownies, and chocolate chip cookies.</p>
+            <label for="quantity1">Quantity:</label>
+            <div class="quantity-control">
+                <button class="quantity-btn minus-btn" data-index="0">-</button>
+                <input type="number" id="quantity1" min="0" max="8" value="0">
+                <button class="quantity-btn plus-btn" data-index="0">+</button>
+            </div>
+            <p>Price: Rs. 27 /-</p>
+            <button class="add-to-cart" data-index="0" data-price="27">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/originals/4c/f7/b8/4cf7b8fa13224525d7a0a5480c4cb56d.jpg" alt="Product 2">
+            <h2>Snickers</h2>
+            <p>Chocolate is one of the most popular food types and flavors udding, mousse, chocolate brownies, and chocolate chip cookies.</p>
+            <label for="quantity2">Quantity:</label>
+            <div class="quantity-control">
+                <button class="quantity-btn minus-btn" data-index="1">-</button>
+                <input type="number" id="quantity2" min="0" max="8" value="0">
+                <button class="quantity-btn plus-btn" data-index="1">+</button>
+            </div>
+
+            <p>Price: Rs. 15 /-</p>
+            <button class="add-to-cart" data-index="1" data-price="15">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.thespruceeats.com/thmb/FhHcgQni8lgV0griUeDJMTAszxI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chocolate_hero1-d62e5444a8734f8d8fe91f5631d51ca5.jpg"
+                alt="Product 3">
+            <h2>Amul Dark chocolate</h2>
+            <p>Chocolate is one of the most popular food luding cakes, pudding, mousse, chocolate brownies, and chocolate chip cookies.</p>
+            <label for="quantity3">Quantity:</label>
+            <div class="quantity-control">
+                <button class="quantity-btn minus-btn" data-index="2">-</button>
+                <input type="number" id="quantity3" min="0" max="8" value="0">
+                <button class="quantity-btn plus-btn" data-index="2">+</button>
+            </div>
+
+            <p>Price: Rs. 20 /-</p>
+            <button class="add-to-cart" data-index="2" data-price="20">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.scripps.org/sparkle-assets/seo_thumbnails/news_items/5317/facebook-00923cdf2f627d52941a01f2d8b7a4c5.jpg"
+                alt="Product 4">
+            <h2>Cadbury Dairy Milk</h2>
+            <p>Chocolate is one of the most popular food types and flavors in the world, and many foodstuffs involving chocolate exist, particularly desserts, including cakes,e chip cookies.</p>
+            <label for="quantity4">Quantity:</label>
+            <div class="quantity-control">
+                <button class="quantity-btn minus-btn" data-index="3">-</button>
+                <input type="number" id="quantity4" min="0" max="8" value="0">
+                <button class="quantity-btn plus-btn" data-index="3">+</button>
+            </div>
+
+            <p>Price: Rs. 25 /-</p>
+            <button class="add-to-cart" data-index="3" data-price="25">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.thespruceeats.com/thmb/FhHcgQni8lgV0griUeDJMTAszxI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chocolate_hero1-d62e5444a8734f8d8fe91f5631d51ca5.jpg"
+                alt="Product 5">
+            <h2>Cadbury 5-Star</h2>
+            <p>Chocolate is one of the most popular food types and flavors in the world, and many foodstuffs inolate brownies, and chocolate chip cookies.</p>
+            <label for="quantity5">Quantity:</label>
+            <div class="quantity-control">
+                <button class="quantity-btn minus-btn" data-index="4">-</button>
+                <input type="number" id="quantity5" min="0" max="8" value="0">
+                <button class="quantity-btn plus-btn" data-index="4">+</button>
+            </div>
+
+            <p>Price: Rs. 53 /-</p>
+            <button class="add-to-cart" data-index="4" data-price="53">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/originals/4c/f7/b8/4cf7b8fa13224525d7a0a5480c4cb56d.jpg" alt="Product 6">
+            <h2>Galaxy Chocolate Bar</h2>
+            <p>Chocolate is one of the most popular food types and flavors in the wousse, chocolate brownies, and chocolate chip cookies.</p>
+            <label for="quantity6">Quantity:</label>
+            <div class="quantity-control">
+                <button class="quantity-btn minus-btn" data-index="5">-</button>
+                <input type="number" id="quantity6" min="0" max="8" value="0">
+                <button class="quantity-btn plus-btn" data-index="5">+</button>
+            </div>
+
+            <p>Price: Rs. 59 /-</p>
+            <button class="add-to-cart" data-index="5" data-price="59">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.thespruceeats.com/thmb/FhHcgQni8lgV0griUeDJMTAszxI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chocolate_hero1-d62e5444a8734f8d8fe91f5631d51ca5.jpg"
+                alt="Product 7">
+            <h2>Nestle Kinder-Joy</h2>
+            <p>Chocolate is one of the most popular food types and flavors in the world,late chip cookies.</p>
+            <label for="quantity7">Quantity:</label>
+            <div class="quantity-control">
+                <button class="quantity-btn minus-btn" data-index="6">-</button>
+                <input type="number" id="quantity7" min="0" max="8" value="0">
+                <button class="quantity-btn plus-btn" data-index="6">+</button>
+            </div>
+
+            <p>Price: Rs. 34 /-</p>
+            <button class="add-to-cart" data-index="6" data-price="34">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/originals/4c/f7/b8/4cf7b8fa13224525d7a0a5480c4cb56d.jpg" alt="Product 7">
+            <h2>Cadbury Park</h2>
+            <p>Chocolate is one of the most popular food types and flavors in mousse, chocolate brownies, and chocolate chip cookies.</p>
+            <label for="quantity6">Quantity:</label>
+            <div class="quantity-control">
+                <button class="quantity-btn minus-btn" data-index="7">-</button>
+                <input type="number" id="quantity8" min="0" max="8" value="0">
+                <button class="quantity-btn plus-btn" data-index="7">+</button>
+            </div>
+
+            <p>Price: Rs. 45 /-</p>
+            <button class="add-to-cart" data-index="5" data-price="45">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart Modal start here-->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total Price: Rs. <span id="total-price">0</span>/-</p>
+            <button id="place-order">Place Order</button>
+        </div>
+    </div>
+
+    <!-- Footer starts here -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="./Assets/images/logo-design-49574.png" alt="Company Logo">
+        </div>
+        <div class="footer-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <!-- script file -->
+
     <script src="./Asset//script.js"></script>
 </body>
 </html>
