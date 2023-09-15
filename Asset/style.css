@@ -200,7 +200,16 @@ input[type="number"] {
 }
 
 #place-order:hover {
-    background-color: #ff7043;
+    background-color: #5f86db;
+}
+
+.delete-btn{
+    margin: 15px;
+    padding: 6px 5px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background: red;
 }
 
 /* Style the footer */
