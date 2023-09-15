@@ -2,6 +2,9 @@
 
 This readme provides an overview of the Chocolate Shop website, its features, and how to use it.
 
+##Hosted link
+https://subhajit889.github.io/Basic-Chocolate-shop/
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
@@ -66,3 +69,26 @@ If you'd like to contribute to the Chocolate Shop website, you can follow these 
 6. Push the changes to your GitHub repository.
 
 7. Create a pull request to the original repository.
+
+
+
+
+##Approach:
+
+1. HTML Structure: Start by creating the HTML structure for website. Define the layout, navigation bar, product cards, cart modal, and footer. 
+
+2. CSS Styling: Apply CSS styles to make website visually appealing and responsive. Use media queries to ensure that the website looks good on different devices.
+
+3. JavaScript for Interactivity: Implement JavaScript to add interactivity to site. This includes handling button clicks, updating product quantities, and managing the shopping cart.
+
+4. Data Management: Use JavaScript to manage data related to the shopping cart, including cart items, quantities, and prices.
+
+5. Event Handling: Set up event listeners to capture user interactions, such as adding items to the cart and placing orders.
+
+6. Cart Modal: Create a cart modal that displays the cart's contents and total price. Update the modal whenever the cart changes.
+
+7. Order Placement: Implement the functionality to place orders, including checking if the cart is empty and clearing it after a successful order.
+
+8. Responsive Design: Use CSS to make your website responsive, so it adapts to different screen sizes and orientations.
+
+
